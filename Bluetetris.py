@@ -575,7 +575,7 @@ def main(win):
                 for event in pygame.event.get():
                     if event.type == pygame.QUIT:
                         run = False
-                    if event.type == pygame.KEYUP:
+                   """ if event.type == pygame.KEYUP:
                         if event.key == pygame.K_LEFT:  # dir que has aixecat el boto
                             left = 0
                         if event.key == pygame.K_RIGHT:
@@ -598,7 +598,7 @@ def main(win):
                         if event.key == pygame.K_UP:  # canviar la posició de la llista de la pesa, o sigui la rotació
                             current_piece.rotation += 1
                             if not (valid_space(current_piece, grid, IA)):
-                                current_piece.rotation -= 1
+                                current_piece.rotation -= 1"""
                 shape_pos = convert_shape_format(current_piece)  # cordenades de cada bloc de la fitxa
                 if (valid_space(current_piece, grid, IA)):
                     for i in range(len(shape_pos)):
